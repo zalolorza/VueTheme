@@ -1,6 +1,6 @@
 
 # VueTheme - WordPress Theme + VueJs
-WordPress theme using WP REST API and [VueJs 2](http://vuejs.org), based on [rtCamp](https://rtcamp.com)'s solution. 
+WordPress theme using WP REST API and [VueJs 2](http://vuejs.org), inspired on [rtCamp](https://rtcamp.com)'s solution. 
 WP Router is exposing to Vue Router. Only CPT and pages.
 This theme is base theme for WordPress theme developers.
 
