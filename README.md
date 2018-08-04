@@ -11,10 +11,6 @@ This theme is base theme for WordPress theme developers.
 4. To start dev server with hot reload `npm run dev`
 5. To create build for production with minification `npm run build` and set   `define( 'VUE_DEV', false );`
 
-## Requirements
-* [WP API Menus plugin](https://wordpress.org/plugins/wp-api-menus/)
-* WordPress Version 4.7+
-
 ## Frameworks / Packages used
 * [Vue 2](http://vuejs.org)
 * [Vue-Router](https://github.com/vuejs/vue-router)
