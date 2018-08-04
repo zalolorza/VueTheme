@@ -1,0 +1,105 @@
+@for $i from 1 through 10 {    
+    @include mb(null,1*$i);
+}
+
+@for $i from 3 through 60 {    
+    @include mb(null,5*$i);
+}
+
+@for $i from 1 through 30 {    
+    @include mt(null,10*$i);
+}
+
+
+@for $i from 1 through 25 {    
+    @include pt(null,5*$i);
+}
+
+
+
+@include media-breakpoint-down(lg) {
+    .mt-after-logo {
+        padding-top:0;
+        margin-top:100px;
+    }
+
+    @for $i from 1 through 50 {    
+        @include mt('lg',5*$i);
+    }
+    
+    @for $i from 1 through 50 {    
+        @include mb('lg',5*$i);
+    }
+
+    @for $i from 1 through 20 {    
+        @include pt('lg',5*$i);
+    }
+    
+    @for $i from 1 through 20 {    
+        @include pb('lg',5*$i);
+    }
+    
+}
+
+
+@include media-breakpoint-down(md) {
+    .mt-after-logo {
+        padding-top:0;
+        margin-top:90px;
+    }
+
+    @for $i from 1 through 50 {    
+        @include mt('md',5*$i);
+    }
+    
+    @for $i from 1 through 50 {    
+        @include mb('md',5*$i);
+    }
+
+    @for $i from 1 through 20 {    
+        @include pt('md',5*$i);
+    }
+    
+    @for $i from 1 through 20 {    
+        @include pb('md',5*$i);
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    @for $i from 1 through 50 {    
+        @include mt('sm',5*$i);
+    }
+    
+    @for $i from 1 through 50 {    
+        @include mb('sm',5*$i);
+    }
+
+    @for $i from 1 through 20 {    
+        @include pt('sm',5*$i);
+    }
+    
+    @for $i from 1 through 20 {    
+        @include pb('sm',5*$i);
+    }
+}
+
+
+@include media-breakpoint-down(xs) {
+
+    @for $i from 1 through 50 {    
+        @include mt('xs',5*$i);
+    }
+    
+    @for $i from 1 through 50 {    
+        @include mb('xs',5*$i);
+    }
+
+    @for $i from 1 through 20 {    
+        @include pt('xs',5*$i);
+    }
+    
+    @for $i from 1 through 20 {    
+        @include pb('xs',5*$i);
+    }
+}

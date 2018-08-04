@@ -1,0 +1,32 @@
+ul {
+    padding-left:0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin:0;
+    li {
+        padding-left:0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-indent:0;
+        margin:0;
+    }
+}
+.list-inline {
+    list-style: none;
+    li {
+        display:inline-block;
+    }
+}
+
+.list-unstyle,
+.list-unstyled {
+    list-style: none;
+    list-style-type:none;
+    li {
+        display:block;
+        margin:0;
+        padding:0;
+    }
+}
