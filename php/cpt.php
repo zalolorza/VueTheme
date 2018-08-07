@@ -56,42 +56,42 @@ add_action( 'init', 'register_news' );
 
 function register_news() {
 	$labels = array(
-		'name'               => _x( 'Notícies', 'post type general name', 'pur' ),
-		'singular_name'      => _x( 'Notícia', 'post type singular name', 'pur' ),
-		'menu_name'          => _x( 'Notícies PUR', 'admin menu', 'pur' ),
-		'name_admin_bar'     => _x( 'Notícia', 'add new on admin bar', 'pur' ),
-		'add_new'            => _x( 'Afegir nova', 'book', 'pur' ),
-		'add_new_item'       => __( 'Afegir nova notícia', 'pur' ),
-		'new_item'           => __( 'Nova notícia', 'pur' ),
-		'edit_item'          => __( 'Editar notícia', 'pur' ),
-		'view_item'          => __( 'Veure notícia', 'pur' ),
-		'all_items'          => __( 'Totes les notícies', 'pur' ),
-		'search_items'       => __( 'Cercar notícies', 'pur' ),
-		'parent_item_colon'  => __( 'Notícies mare:', 'pur' ),
-		'not_found'          => __( 'Cap notícia trobada', 'pur' ),
-		'not_found_in_trash' => __( 'Cap notícia trobada a la paperera.', 'pur' )
+		'name'               => _x( 'News Vue', 'post type general name', 'VueTheme' ),
+		'singular_name'      => _x( 'News', 'post type singular name', 'VueTheme' ),
+		'menu_name'          => _x( 'News Vue', 'admin menu', 'VueTheme' ),
+		'name_admin_bar'     => _x( 'News', 'add new on admin bar', 'VueTheme' ),
+		'add_new'            => _x( 'Add news', 'book', 'VueTheme' ),
+		'add_new_item'       => __( 'Add new news', 'VueTheme' ),
+		'new_item'           => __( 'New news', 'VueTheme' ),
+		'edit_item'          => __( 'Edit news', 'VueTheme' ),
+		'view_item'          => __( 'See news', 'VueTheme' ),
+		'all_items'          => __( 'All news', 'VueTheme' ),
+		'search_items'       => __( 'Search news', 'VueTheme' ),
+		'parent_item_colon'  => __( 'Parent news:', 'VueTheme' ),
+		'not_found'          => __( 'No news found', 'VueTheme' ),
+		'not_found_in_trash' => __( 'No news found in trash', 'VueTheme' )
 	);
 
 	$args = array(
 		'labels'             => $labels,
-        'description'        => __( 'Description', 'pur' ),
+        'description'        => __( 'Description', 'VueTheme' ),
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
         'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'news' ),
+		'rewrite'            => array( 'slug' => 'news-vue' ),
 		'capability_type'    => 'post',
 		'has_archive'        => false,
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'thumbnail' ),
 		'show_in_rest'       => true,
-  		'rest_base'          => 'news',
+  		'rest_base'          => 'news-vue',
   		'rest_controller_class' => 'WP_REST_Posts_Controller',
 	);
 
-    register_post_type( 'news-pur', $args );
+    register_post_type( 'news-vue', $args );
     
 
 }

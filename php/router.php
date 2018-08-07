@@ -10,6 +10,7 @@ include_once ('lib/cache.php');
 
 function v_get_routes(){
 
+	
 	$cache = VueThemeCache::getCache('routes');
 
 	if($cache) return $cache;
@@ -93,7 +94,6 @@ function v_get_routes(){
 
 
 		VueThemeCache::saveCache('routes', $routes, array('flush_on_save'=>array('page')));
-
 	
 		return $routes;
 
@@ -106,11 +106,13 @@ function v_get_routes(){
  *
  */
 
+
+
 function v_register_routes(){
 
 		wp_localize_script( 'rest-theme-vue', 'wprouter', v_get_routes());
 }
 
 
-add_action( 'wp_enqueue_scripts', 'v_register_routes' );
+add_action( 'wp_enqueue_scripts', 'v_register_routes', 99 );
 

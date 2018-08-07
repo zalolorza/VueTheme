@@ -1,8 +1,9 @@
 <template>
 
 
-        <div class="page-content page-content--no-padding" >
+        <div class="page-content" >
            
+           <h1> {{page.title.rendered}} </h1>
             <div class="mb-160 mb-xs-150" v-if="loaded">
                 <NewsList :amount="3" />
             </div>

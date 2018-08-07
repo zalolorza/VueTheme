@@ -19,12 +19,12 @@ foreach($CONFIG as $KEY => $GLOBAL){
  *
  */
 
-foreach (glob("php/*.php") as $filename)
+
+
+foreach (glob(__DIR__."/php/*.php") as $filename)
 {
     include_once $filename;
 }
-
-
 
 
 

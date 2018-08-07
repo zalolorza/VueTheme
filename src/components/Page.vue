@@ -45,6 +45,7 @@ export default {
 			this.$http.get( 'wp/v2/pages/'+this.wproute.id)
 			.then( ( res ) => {
 				this.page = res.data;
+				console.log(res.data);
 				this.$store.commit( 'changeTitle', this.page.title.rendered );
 				this.loaded = true;
 			} );

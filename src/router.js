@@ -15,8 +15,8 @@ Vue.component( 'Page', Page );
 const PageHome = () => import('./components/PageHome.vue');
 Vue.component( 'PageHome', PageHome );
 
-const News = () => import('./components/News.vue');
-Vue.component( 'News', News );
+const PageNews = () => import('./components/PageNews.vue');
+Vue.component( 'PageNews', PageNews );
 
 const ErrorPage = () => import('./components/Error.vue');
 Vue.component( 'ErrorPage', ErrorPage );

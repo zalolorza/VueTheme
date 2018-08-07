@@ -47,12 +47,7 @@ function v_register_theme_scripts() {
     $base_url  = esc_url_raw( home_url() );
     $base_path = rtrim( parse_url( $base_url, PHP_URL_PATH ), '/' );
 
-
-    if(!defined('ICL_LANGUAGE_CODE')){
-        define(ICL_LANGUAGE_CODE, false);
-    };
-    
-    wp_localize_script( 'rest-theme-vue', 'vwp', array(
+    $exposed_vars = array(
         'root'      => esc_url_raw( rest_url() ),
         'base_url'  => $base_url,
         'base_path' => $base_path ? $base_path . '/' : '/',
@@ -60,10 +55,15 @@ function v_register_theme_scripts() {
         'nonce'     => wp_create_nonce( 'wp_rest' ),
         'site_name' => get_bloginfo( 'name' ),
         'front_page_id' => get_option( 'page_on_front' ),
-        'lang' => ICL_LANGUAGE_CODE,
-        'lang_switch' => array_values(icl_get_languages('')),
         'stylesheet_directory_uri' => get_stylesheet_directory_uri()
-    ) );
+    );
+
+    if(defined('ICL_LANGUAGE_CODE')){
+        $exposed_vars[ 'lang'] = ICL_LANGUAGE_CODE;
+        $exposed_vars[ 'lang_switch'] = array_values(icl_get_languages(''));
+    };
+
+    wp_localize_script( 'rest-theme-vue', 'vwp', $exposed_vars);
 
     wp_localize_script( 'rest-theme-vue', 'vwp_options', array(
         'address'      => get_field('address', 'option'),
@@ -71,7 +71,7 @@ function v_register_theme_scripts() {
     ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'v_register_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'v_register_theme_scripts', 10 );
 
 
 

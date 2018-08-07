@@ -58,7 +58,7 @@ export default {
 	
     computed: {
       	...mapGetters({
-              getSection:'getSection'
+          
         })
     },
 	methods: {
@@ -68,7 +68,7 @@ export default {
         },
         getNews() {
             
-            this.$http.get( 'wp/v2/news-'+this.getSection+'/?per_page='+this.per_page+'&offset='+this.offset)
+            this.$http.get( 'wp/v2/news-vue/?per_page='+this.per_page+'&offset='+this.offset)
 			.then( ( res ) => {
                 this.news = {...this.news, ...res.data};
                 this.offset = this.per_page;

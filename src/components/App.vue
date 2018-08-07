@@ -19,18 +19,6 @@ export default {
 		}
 	},
 
-	created () {
-		document.addEventListener('click', this.documentClick);
-	},
-
-	mounted(){
-		this.appLoaded = true;
-	},
-
-	destroyed () {
-		document.removeEventListener('click', this.documentClick)
-	},
-
 	computed: {
 		...mapGetters({
 			
