@@ -68,8 +68,10 @@ In order to avoid any CORS issues when delivering assets from webpack server to 
 ## SASS: Mixins & vars in Vue components
 If you ever used Vue.js, you know it can be tricky to use scss mixins in Vue components. For that reason, we use `sass-resources-loader` to preload scss resources.
 
-Any sass file included in `/src/assets/sass/resources` will be preloaded and available everywhere, vue components included. Be sure you don't include any actual CSS code, since it will be preloaded multiple times (mixins and vars are fine because are not rendered in the output).
+Any sass file included in `/src/assets/sass/resources` will be preloaded and available everywhere, vue components included. Be sure you don't include any actual CSS code, since it will be preloaded multiple times (mixins and vars are fine because are not rendered in the output). The files are included alphabetically (or you can edit `sass-resources-loader` options.resources in the webpack.config.js file).
 
+## Bootstrap 4.1
+You build your custom Bootstrap set up from `main.css`, `_1_1_bootstrap_vars.scss`, and `_1_2_bootstrap_functions.scss`.
 
 ## Next
 * Expose Achives, Categories, tags to Vue Router.
