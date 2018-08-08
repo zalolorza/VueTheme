@@ -54,7 +54,7 @@ if (process.env.NODE_ENV == 'development') {
 ## DEV server
 The server configuration for the dev environment is a bit tricky. Webpack will start a dev server, but you also need a PHP server, where you will actually run the WordPress app. Webpack server will use hot reload and watch for any change.
 
-In order to avoid CORSS issues when delivering assets from webpack server to the PHP server, we are sending the following headers:
+In order to avoid any CORS issues when delivering assets from webpack server to the PHP server, we are sending the following headers:
 
 `````
  headers: {
