@@ -52,8 +52,18 @@ if (process.env.NODE_ENV == 'development') {
 ````
 
 ## DEV server
-The server configuration for the dev environment is a bit tricky. Webpack will start a dev server, but you also need a PHP server, where you will actually run the WordPress app. Webpack server will use hot reload and watch for any change. 
+The server configuration for the dev environment is a bit tricky. Webpack will start a dev server, but you also need a PHP server, where you will actually run the WordPress app. Webpack server will use hot reload and watch for any change.
 
+In order to avoid CORSS issues when delivering assets from webpack server to the PHP server, we are sending the following headers:
+
+`````
+ headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    }
+`````
+   
 
 ## SASS: Mixins & vars in Vue components
 If you ever used Vue.js, you know it can be tricky to use scss mixins in Vue components. For that reason, we use `sass-resources-loader` to preload scss resources.
