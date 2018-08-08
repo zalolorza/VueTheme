@@ -11,8 +11,12 @@ WordPress boilerplate theme using WP REST API and [VueJs 2](http://vuejs.org), i
   /assets
   /components
   /sass
-    /resources
-     /
+      /resources
+axios.js
+filter.js
+main.js
+router.js
+store.js
 ```
 
 ## Router
