@@ -1,6 +1,6 @@
 
 # VueTheme - Vue.js Boilerplate Theme for Wordpress
-WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/rest-api/), [VueJs 2](http://vuejs.org), [Vue Ruter](https://router.vuejs.org/), [Vuex](https://vuex.vuejs.org/), and [Axios](https://github.com/axios/axios). Inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution.
+WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/rest-api/), [VueJs 2](http://vuejs.org), [Vue Ruter](https://router.vuejs.org/), [Vuex](https://vuex.vuejs.org/), [Axios](https://github.com/axios/axios), and [Bootstrap v4.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/). Inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution.
 
 ## Installation
 1. This is a regular WP theme. Install it from the admin.
