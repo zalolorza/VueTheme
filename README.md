@@ -17,6 +17,7 @@ filters.js
 main.js
 router.js
 store.js 
+config.ini
 ```
 
 ## Router
