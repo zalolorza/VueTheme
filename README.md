@@ -51,7 +51,13 @@ if (process.env.NODE_ENV == 'development') {
 }
 ````
 
+## SASS & Mixins in Vue components
+If you ever used Vue.js, you know it can be tricky to use scss mixins in Vue components. For that reason, we use `sass-resources-loader` to preload scss resources.
+
+Any sass file included in `/src/assets/sass/resources` will be preloaded and available everywhere, vue components included.
+
 
 ## Next
 * Expose Achives, Categories, tags to Vue Router.
 * Automatic edit of SCRIPTS_VERSION in config.init each time we `npm run build`
+* Nuxt.js ?
