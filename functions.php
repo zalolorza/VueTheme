@@ -6,7 +6,7 @@
  *
  */
 
-$CONFIG = parse_ini_file('config/config.ini',true);
+$CONFIG = parse_ini_file('config.ini',true);
 
 foreach($CONFIG as $KEY => $GLOBAL){
     define($KEY,$GLOBAL);
@@ -18,8 +18,6 @@ foreach($CONFIG as $KEY => $GLOBAL){
  *  Include all scripts
  *
  */
-
-
 
 foreach (glob(__DIR__."/php/*.php") as $filename)
 {
