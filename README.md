@@ -1,20 +1,20 @@
 
 # VueTheme - Vue.js Boilerplate Theme for Wordpress
 WordPress boilerplate theme using WP REST API and [VueJs 2](http://vuejs.org), inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution. 
-WP Router is exposing to Vue Router. Only CPT and pages.
-This theme is base theme for WordPress theme developers.
 
-## How to use it for development?
-1. Go to your WP theme directory & navigate to VueTheme.
+# Router
+The following elements are automated and exposed to Vue Router:
+* Posts singles -> PostSingle.vue 
+* CPT Singles -> CptnameSingle.vue
+* Pages -> Page.vue
+* Pages with template -> PageTemplateName.vue
+
+## Installation
+1. This is a regular WP theme. Install it from the admin.
 2. Install dependencies `npm install`
-3. Make sure you add `define( 'VUE_DEV', true );` in `wp-config.php` to get asset files from webpack dev server.
+3. Add `define( 'VUE_DEV', true );` in `wp-config.php` to get asset files from webpack dev server.
 4. To start dev server with hot reload `npm run dev`
-5. To create build for production with minification `npm run build` and set   `define( 'VUE_DEV', false );`
+5. To create build for production with minification `npm run build` and set `define( 'VUE_DEV', false );`
 
-## Frameworks / Packages used
-* [Vue 2](http://vuejs.org)
-* [Vue-Router](https://github.com/vuejs/vue-router)
-* [Vuex](https://github.com/vuejs/vuex)
-* [Axios](https://github.com/mzabriskie/axios)
-* [Babel](https://babeljs.io)
-* [Webpack](https://webpack.js.org/)
+# Next
+* Expose Achives, Categories, tags to Vue Router.
