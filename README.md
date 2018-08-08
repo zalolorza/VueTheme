@@ -1,6 +1,6 @@
 
 # VueTheme - Vue.js Boilerplate Theme for Wordpress
-WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/rest-api/), [VueJs 2](http://vuejs.org), [Vue Ruter](https://router.vuejs.org/) and [Vuex](https://vuex.vuejs.org/). Inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution.
+WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/rest-api/), [VueJs 2](http://vuejs.org), [Vue Ruter](https://router.vuejs.org/), [Vuex](https://vuex.vuejs.org/), and [Axios](https://github.com/axios/axios). Inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution.
 
 ## Directory structure
 ```
