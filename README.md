@@ -41,6 +41,17 @@ Go to `/php` to set the WordPress functionality like any other theme. All files 
 ## Custom cache
 There's a custom cache class for heavy queries, like the router or the menus. It works with other caching tools, such as WP Rocket. You can customize when to flush the cache when you save it (for example when save pages, or a certain post type).
 
+## Webpack
+Edit your build and dev public path in `webpack.config.js`. 
+````
+if (process.env.NODE_ENV == 'development') {
+  var buildPublicPath = '/dist/';
+} else {
+  var buildPublicPath = '/wp-content/themes/VueTheme/dist/';
+}
+````
+
+
 ## Next
 * Expose Achives, Categories, tags to Vue Router.
 * Automatic edit of SCRIPTS_VERSION in config.init each time we `npm run build`
