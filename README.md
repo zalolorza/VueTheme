@@ -1,6 +1,6 @@
 
 # VueTheme - Vue.js Boilerplate Theme for Wordpress
-WordPress theme using WP REST API and [VueJs 2](http://vuejs.org), inspired on [rtCamp](https://rtcamp.com)'s solution. 
+WordPress boilerplate theme using WP REST API and [VueJs 2](http://vuejs.org), inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution. 
 WP Router is exposing to Vue Router. Only CPT and pages.
 This theme is base theme for WordPress theme developers.
 
