@@ -1,6 +1,8 @@
 
 # VueTheme - Vue.js Boilerplate Theme for Wordpress
-WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/rest-api/), [VueJs 2](http://vuejs.org), [Vue Ruter](https://router.vuejs.org/), [Vuex](https://vuex.vuejs.org/), [Axios](https://github.com/axios/axios), and [Bootstrap v4.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/). Inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution.
+WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/rest-api/), [VueJs 2](http://vuejs.org), [Vue Ruter](https://router.vuejs.org/), [Vuex](https://vuex.vuejs.org/), [Axios](https://github.com/axios/axios), and [Bootstrap v4.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/). Inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution. 
+
+**This theme is still experimental** 
 
 ## Installation
 1. This is a regular WP theme. Install it from the admin.
@@ -72,6 +74,9 @@ Any sass file included in `/src/assets/sass/resources` will be preloaded and ava
 
 ##### Bootstrap 4.1
 You build your custom Bootstrap set up from `main.css`, `_1_1_bootstrap_vars.scss`, and `_1_2_bootstrap_functions.scss`.
+
+## Example
+I developed this theme for [PUR Restaurant](https://purbarcelona.com/). Design and project direction: [Gassiot & Llobet](https://gassiotllobet.com/)
 
 ## Next
 * Expose Achives, Categories, tags to Vue Router.
