@@ -4,7 +4,7 @@ WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/
 
 ## Directory structure
 ```
-/admin -> Admin and Editor css
+/admin -> `Admin and Editor css`
 /php -> WordPress configuration
   /lib -> PHP Classes 
 /src -> Webpack source folder
