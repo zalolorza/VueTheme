@@ -4,19 +4,19 @@ WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/
 
 ## Directory structure
 ```
-/admin -> `Admin and Editor css`
-/php -> WordPress configuration
-  /lib -> PHP Classes 
-/src -> Webpack source folder
+/admin
+/php
+  /lib
+/src
   /assets 
-  /components -> Vue Components
-  /sass -> Sass Files
-      /resources -> Sass resources
-axios.js  -> Axios config
-filters.js  -> Vue Filters
-main.js  -> Entry point
-router.js  -> Vue Router config
-store.js  -> Vuex store config
+  /components
+  /sass
+      /resources
+axios.js
+filters.js 
+main.js
+router.js
+store.js 
 ```
 
 ## Router
