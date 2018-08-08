@@ -8,7 +8,7 @@ WordPress boilerplate theme using [WP REST API](https://developer.wordpress.org/
 3. To start dev server with hot reload `npm run dev`. You will need also a PHP server. See webpack.config.js
 5. To create build for production with minification `npm run build` and set `define( 'VUE_DEV', false );`
 
-## Theme Directory basic structure
+#### Theme Directory basic structure
 ```
 /admin
 /php
@@ -29,7 +29,7 @@ config.ini
 ## WordPress
 Go to `/php` to set the WordPress functionality like any other theme. All files in the root of `/php` directory are included automatically. Use  `/php/lib` for classes and libraries.
 
-#### Router
+### Router
 The following elements are automated and exposed to Vue Router:
 * Posts singles -> PostSingle.vue 
 * CPT Singles -> CptnameSingle.vue
