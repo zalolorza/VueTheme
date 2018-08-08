@@ -4,8 +4,15 @@ WordPress boilerplate theme using WP REST API and [VueJs 2](http://vuejs.org), i
 
 ## Directory structure
 ```
-- Admin
-- Config
+/admin
+/php
+  /lib
+/src
+  /assets
+  /components
+  /sass
+    /resources
+     /
 ```
 
 ## Router
