@@ -51,10 +51,14 @@ if (process.env.NODE_ENV == 'development') {
 }
 ````
 
-## SASS & Mixins in Vue components
+## DEV server
+The server configuration for the dev environment is a bit tricky. Webpack will start a dev server, but you also need a PHP server, where you will actually run the WordPress app. Webpack server will use hot reload and watch for any change. 
+
+
+## SASS: Mixins & vars in Vue components
 If you ever used Vue.js, you know it can be tricky to use scss mixins in Vue components. For that reason, we use `sass-resources-loader` to preload scss resources.
 
-Any sass file included in `/src/assets/sass/resources` will be preloaded and available everywhere, vue components included.
+Any sass file included in `/src/assets/sass/resources` will be preloaded and available everywhere, vue components included. Be sure you don't include any actual CSS code, since it will be preloaded multiple times (mixins and vars are fine because are not rendered in the output).
 
 
 ## Next
