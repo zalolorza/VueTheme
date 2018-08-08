@@ -3,7 +3,9 @@
 WordPress boilerplate theme using WP REST API and [VueJs 2](http://vuejs.org), inspired on [rtCamp](https://github.com/rtCamp/VueTheme)'s solution.
 
 ## Directory structure
+```
 * Admin
+```
 
 ## Router
 The following elements are automated and exposed to Vue Router:
