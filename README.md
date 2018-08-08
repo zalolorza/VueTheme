@@ -43,7 +43,7 @@ There's a custom cache class for heavy queries, like the router or the menus. It
 
 ## Webpack
 Edit your build and dev public path in `webpack.config.js`. 
-````
+```js
 if (process.env.NODE_ENV == 'development') {
   var buildPublicPath = '/dist/';
 } else {
@@ -56,7 +56,7 @@ The server configuration for the dev environment is a bit tricky. Webpack will s
 
 In order to avoid any CORS issues when delivering assets from webpack server to the PHP server, we are sending the following headers:
 
-`````
+```js
  headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
