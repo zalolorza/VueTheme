@@ -129,5 +129,6 @@ if (process.env.NODE_ENV === 'production') {
     })
   ])
 } else if(process.env.NODE_ENV === 'development') {
+  process.noDeprecation = true;
   module.exports.output.publicPath = 'http://localhost:8080'+module.exports.output.publicPath;
 }
